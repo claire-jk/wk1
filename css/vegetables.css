@@ -1,0 +1,110 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1f5d2;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #f1f5d2;
+  padding: 20px;
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #556b2f;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  background: #7d9250;
+  padding: 10px;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Top-right */
+.top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.top-right a {
+  margin-right: 10px;
+}
+
+.top-right button {
+  background: none;
+  border: 1px solid #7d9250;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Main Image */
+.main-image img {
+  width: 100%;
+  display: block;
+}
+
+/* Content */
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.box {
+  background: #fff;
+  padding: 15px;
+  width: 48%;
+}
+
+.box h2 {
+  background: #7d9250;
+  color: white;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.vege-gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vege-gallery img {
+  width: 32%;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background: #7d9250;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
