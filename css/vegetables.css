@@ -9,6 +9,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f1f5d2;
   color: #333;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 /* Header */
@@ -19,37 +21,17 @@ header {
 }
 
 header h1 {
-  font-size: 2.5em;
+  font-size: 36px;
   font-weight: bold;
   color: #556b2f;
 }
 
-nav {
-  margin-top: 10px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  background: #7d9250;
-  padding: 10px;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Top-right */
 .top-right {
   position: absolute;
-  top: 20px;
+  top: 25px;
   right: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .top-right a {
@@ -59,45 +41,98 @@ nav ul li a {
 .top-right button {
   background: none;
   border: 1px solid #7d9250;
-  padding: 5px 10px;
+  padding: 4px 12px;
   margin-left: 5px;
   cursor: pointer;
+  color: #556b2f;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  background: #7d9250;
+  padding: 10px 20px;
+}
+
+nav ul li {
+  margin-right: 25px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 /* Main Image */
 .main-image img {
   width: 100%;
+  height: 320px;
+  object-fit: cover;
   display: block;
+  margin: 20px 0;
 }
 
-/* Content */
+/* Content Section */
 .content {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  margin-bottom: 30px;
 }
 
+/* 左右共用樣式 */
 .box {
-  background: #fff;
-  padding: 15px;
   width: 48%;
 }
 
-.box h2 {
+/* 左側 Vegetables box (沒有白底) */
+.vege-box h2 {
   background: #7d9250;
   color: white;
   padding: 10px;
-  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .vege-gallery {
   display: flex;
   justify-content: space-between;
+  margin-top: 15px;
 }
 
 .vege-gallery img {
   width: 32%;
-  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* 右側 Contact box (有白底) */
+.contact-box {
+  background: #fff;
+}
+
+.contact-box h2 {
+  background: #7d9250;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contact-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 15px;
+}
+
+.contact-box hr {
+  border: none;
+  border-top: 1px solid #999;
+  margin: 0 15px;
 }
 
 /* Footer */
@@ -105,6 +140,6 @@ footer {
   background: #7d9250;
   text-align: center;
   color: white;
-  padding: 10px;
-  margin-top: 20px;
+  padding: 12px;
+  font-size: 13px;
 }
